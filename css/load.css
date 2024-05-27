@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+} 
+
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "five";
+}
+img{
+  padding-top: 50%;
+  max-width: 100%;
+}
+#Letter1{
+  grid-area: one;
+  width: 40%;
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Letter3{
+  max-width: 40%;
+  grid-area: five;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#Letter2{
+  grid-area: three;
+  width: 40%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
